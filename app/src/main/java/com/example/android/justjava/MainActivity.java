@@ -71,8 +71,8 @@ public class MainActivity extends AppCompatActivity {
         displayMessage(message);
         Intent intent=new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:"));
-        intent.putExtra(intent.EXTRA_EMAIL,"nadingomaa4@gmail.com");
-        intent.putExtra(intent.EXTRA_SUBJECT,"order");
-        intent.putExtra(intent.EXTRA_TEXT,message);
+        intent.putExtra(Intent.EXTRA_EMAIL,"nadingomaa4@gmail.com");
+        intent.putExtra(Intent.EXTRA_SUBJECT,"order");
+        intent.putExtra(Intent.EXTRA_TEXT,message);
         startActivity(intent);}}
 
